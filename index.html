@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page premium para Madu Cílios, especialista em extensão de cílios e realce natural do olhar."
+    />
+    <title>Madu Cílios | Extensão de cílios</title>
+
+    <!-- Fontes: troque aqui se quiser outro estilo tipográfico. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+      Pontos editáveis principais:
+      - WhatsApp: altere os links https://wa.me/5599999999999 ou a constante no script.js.
+      - Instagram: altere @sstudio_madu e o link do footer.
+      - Fotos: adicione os arquivos em assets/img/ com os nomes usados abaixo.
+      - Endereço/Maps: altere o link fictício na seção Localização.
+    -->
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="Madu Cílios - início">
+          <span class="brand-mark">MC</span>
+          <span>Madu Cílios</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          data-nav-toggle
+        >
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="sr-only">Abrir menu</span>
+        </button>
+
+        <div class="nav-links" id="nav-menu" data-nav-menu>
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#tabela">Tabela</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#localizacao">Localização</a>
+          <a class="nav-cta" href="https://wa.me/5599999999999" target="_blank" rel="noopener" data-whatsapp>
+            WhatsApp
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Apresentação Madu Cílios">
+        <div class="hero-backdrop image-shell">
+          <!-- Troque esta imagem pela foto principal da profissional ou de um trabalho. -->
+          <img
+            src="assets/img/madu-hero.png"
+            alt="Trabalho delicado de extensão de cílios"
+            data-fallback
+          />
+          <span class="image-placeholder">Imagem principal em breve</span>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Extensão de cílios com acabamento delicado</p>
+            <h1>Madu Cílios</h1>
+            <p class="hero-lead">Realce seu olhar com delicadeza e naturalidade</p>
+            <p class="hero-text">
+              Atendimento especializado em extensão de cílios, pensado para valorizar sua
+              beleza com cuidado, conforto e elegância. A Madu também oferece cursos para
+              quem deseja iniciar ou aperfeiçoar sua técnica.
+            </p>
+
+            <div class="hero-actions" aria-label="Ações principais">
+              <a
+                class="button button-primary"
+                href="https://wa.me/5599999999999"
+                target="_blank"
+                rel="noopener"
+                data-whatsapp
+              >
+                Agendar pelo WhatsApp
+              </a>
+              <a class="button button-light" href="#servicos">Ver serviços</a>
+              <a class="button button-light" href="#cursos">Conhecer cursos</a>
+            </div>
+
+            <div class="trust-row" aria-label="Destaques do atendimento">
+              <article class="trust-card">
+                <div class="trust-card-top">
+                  <span class="trust-number">01</span>
+                  <span class="trust-icon trust-icon-custom" aria-hidden="true"></span>
+                </div>
+                <strong>Atendimento personalizado</strong>
+                <p>Design pensado para valorizar o seu olhar.</p>
+              </article>
+              <article class="trust-card">
+                <div class="trust-card-top">
+                  <span class="trust-number">02</span>
+                  <span class="trust-icon trust-icon-natural" aria-hidden="true"></span>
+                </div>
+                <strong>Resultado natural</strong>
+                <p>Cílios leves, delicados e harmônicos.</p>
+              </article>
+              <article class="trust-card">
+                <div class="trust-card-top">
+                  <span class="trust-number">03</span>
+                  <span class="trust-icon trust-icon-comfort" aria-hidden="true"></span>
+                </div>
+                <strong>Ambiente confortável</strong>
+                <p>Cuidado, higiene e tranquilidade em cada atendimento.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="sobre">
+        <div class="container about-layout">
+          <div class="about-media reveal">
+            <article class="profile-card">
+              <div class="profile-image image-shell">
+                <!-- Troque pela foto de perfil da Madu. -->
+                <img
+                  src="assets/img/madu-perfil.png"
+                  alt="Foto de perfil da profissional Madu Cílios"
+                  data-fallback
+                />
+                <span class="image-placeholder">Foto de perfil</span>
+              </div>
+              <div class="profile-info">
+                <p class="eyebrow">Lash designer</p>
+                <h2>Madu Cílios</h2>
+                <p>Extensões pensadas para valorizar o seu olhar com leveza.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-copy reveal">
+            <p class="section-kicker">Sobre o atendimento</p>
+            <h2>Beleza no olhar, cuidado em cada detalhe</h2>
+            <p>
+              A Madu oferece um atendimento delicado, organizado e pensado para cada
+              cliente. Cada procedimento é feito com atenção ao formato dos olhos, à rotina
+              e ao resultado desejado, priorizando conforto, higiene e um acabamento elegante.
+            </p>
+            <p>
+              Da primeira conversa ao cuidado pós-procedimento, a experiência foi criada
+              para que você se sinta acolhida, confiante e pronta para sair com o olhar
+              realçado de forma natural.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services-section" id="servicos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Serviços</p>
+            <h2>Escolha o efeito ideal para o seu olhar</h2>
+            <p>
+              Opções para quem busca desde um resultado sutil e natural até um olhar mais
+              marcante, sempre com técnica e cuidado.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card reveal">
+              <span class="service-icon" aria-hidden="true"></span>
+              <h3>Fio a fio</h3>
+              <p>Aplicação clássica, delicada e natural para alongar sem pesar.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-icon" aria-hidden="true"></span>
+              <h3>Volume brasileiro</h3>
+              <p>Volume leve e preenchido, com acabamento moderno e confortável.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-icon" aria-hidden="true"></span>
+              <h3>Volume russo</h3>
+              <p>Mais intensidade e presença para quem gosta de um olhar marcante.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-icon" aria-hidden="true"></span>
+              <h3>Lash lifting</h3>
+              <p>Curvatura e valorização dos fios naturais, sem aplicação de extensões.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-icon" aria-hidden="true"></span>
+              <h3>Manutenção</h3>
+              <p>Reposição dos fios para manter o resultado bonito por mais tempo.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-icon" aria-hidden="true"></span>
+              <h3>Remoção</h3>
+              <p>Retirada cuidadosa das extensões, preservando os fios naturais.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section courses-section" id="cursos">
+        <div class="container courses-layout">
+          <div class="section-copy reveal">
+            <p class="section-kicker">Cursos profissionais</p>
+            <h2>Aprenda extensão de cílios com orientação prática</h2>
+            <p>
+              Além dos atendimentos, a Madu também oferece cursos para quem deseja entrar
+              na área da beleza ou evoluir como lash designer. A proposta é ensinar com
+              clareza, cuidado e foco em técnica, atendimento e acabamento profissional.
+            </p>
+            <a
+              class="button button-primary"
+              href="https://wa.me/5599999999999"
+              target="_blank"
+              rel="noopener"
+              data-whatsapp
+            >
+              Quero informações dos cursos
+            </a>
+          </div>
+
+          <div class="course-grid" aria-label="Cursos disponíveis">
+            <article class="course-card course-card-featured reveal">
+              <span class="course-label">Iniciante</span>
+              <h3>Curso iniciante</h3>
+              <p>
+                Para quem quer começar do zero, entender materiais, biossegurança,
+                mapeamento, aplicação e primeiros atendimentos.
+              </p>
+              <ul class="course-list">
+                <li>Base teórica e prática</li>
+                <li>Orientação para começar</li>
+                <li>Conteúdo editável conforme a turma</li>
+              </ul>
+            </article>
+
+            <article class="course-card reveal">
+              <span class="course-label">Aperfeiçoamento</span>
+              <h3>Curso de aperfeiçoamento</h3>
+              <p>
+                Indicado para lash designers que já atendem e querem melhorar retenção,
+                acabamento, velocidade e segurança no procedimento.
+              </p>
+            </article>
+
+            <article class="course-card reveal">
+              <span class="course-label">Catálogo</span>
+              <h3>Conteúdos e orientações</h3>
+              <p>
+                Espaço para divulgar materiais, avisos importantes, condições de pagamento
+                e dúvidas frequentes sobre os cursos.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing-section" id="tabela">
+        <div class="container pricing-layout">
+          <div class="section-copy reveal">
+            <p class="section-kicker">Tabela de serviços</p>
+            <h2>Valores organizados para facilitar sua escolha</h2>
+            <p>
+              Os preços abaixo são fictícios e editáveis. Use esta área para apresentar a
+              tabela final da cliente de forma clara, elegante e fácil de consultar.
+            </p>
+          </div>
+
+          <article class="price-panel reveal" aria-label="Tabela de preços">
+            <div class="price-panel-header">
+              <h3>Serviços Madu Cílios</h3>
+              <p>Valores editáveis</p>
+            </div>
+
+            <ul class="price-list">
+              <!-- Edite os valores aqui quando tiver a tabela real. -->
+              <li><span>Fio a fio</span><strong>R$ 00,00</strong></li>
+              <li><span>Volume brasileiro</span><strong>R$ 00,00</strong></li>
+              <li><span>Volume russo</span><strong>R$ 00,00</strong></li>
+              <li><span>Lash lifting</span><strong>R$ 00,00</strong></li>
+              <li><span>Manutenção</span><strong>R$ 00,00</strong></li>
+              <li><span>Remoção</span><strong>R$ 00,00</strong></li>
+            </ul>
+
+            <a
+              class="button button-secondary price-button"
+              href="https://wa.me/5599999999999"
+              target="_blank"
+              rel="noopener"
+              data-whatsapp
+            >
+              Consultar disponibilidade
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="galeria">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Resultados</p>
+            <h2>Um olhar delicado muda tudo</h2>
+            <p>
+              Resultados pensados para valorizar sua beleza natural com leveza, conforto
+              e acabamento profissional.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card reveal image-shell">
+              <img src="assets/img/cilios-1.png" alt="Resultado de extensão de cílios 1" data-fallback />
+              <span class="image-placeholder">Resultado 1</span>
+              <figcaption class="gallery-overlay">Efeito Jade</figcaption>
+            </figure>
+            <figure class="gallery-card reveal image-shell">
+              <img src="assets/img/cilios-2.png" alt="Resultado de extensão de cílios 2" data-fallback />
+              <span class="image-placeholder">Resultado 2</span>
+              <figcaption class="gallery-overlay">Detalhes do alongamento</figcaption>
+            </figure>
+            <figure class="gallery-card reveal image-shell">
+              <img src="assets/img/cilios-3.png" alt="Resultado de extensão de cílios 3" data-fallback />
+              <span class="image-placeholder">Resultado 3</span>
+              <figcaption class="gallery-overlay">Resultado natural</figcaption>
+            </figure>
+            <figure class="gallery-card reveal image-shell">
+              <img src="assets/img/cilios-4.png" alt="Resultado de extensão de cílios 4" data-fallback />
+              <span class="image-placeholder">Resultado 4</span>
+              <figcaption class="gallery-overlay">Olhar valorizado</figcaption>
+            </figure>
+          </div>
+
+          <div class="gallery-action reveal">
+            <a
+              class="button button-primary"
+              href="https://wa.me/5599999999999"
+              target="_blank"
+              rel="noopener"
+              data-whatsapp
+            >
+              Quero agendar meu horário
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits-section" aria-labelledby="benefits-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Diferenciais</p>
+            <h2 id="benefits-title">Uma experiência pensada para você</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <span class="benefit-number">01</span>
+              <h3>Atendimento com horário marcado</h3>
+              <p>Mais tranquilidade para chegar, ser atendida e aproveitar o momento.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-number">02</span>
+              <h3>Cuidado com cada cliente</h3>
+              <p>O formato, o estilo e a rotina de cada pessoa são considerados.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-number">03</span>
+              <h3>Procedimentos delicados</h3>
+              <p>Técnicas realizadas com atenção, leveza e acabamento refinado.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-number">04</span>
+              <h3>Agendamento fácil pelo WhatsApp</h3>
+              <p>Um caminho direto para tirar dúvidas e reservar seu melhor horário.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location-section" id="localizacao">
+        <div class="container">
+          <article class="location-card reveal">
+            <div class="location-content">
+              <div class="location-mark" aria-hidden="true"></div>
+              <p class="section-kicker">Onde atender</p>
+              <h2>Localização</h2>
+              <!-- Troque este texto pelo bairro, cidade ou endereço quando puder divulgar. -->
+              <p>
+                Atendimento em um espaço aconchegante, preparado para receber você com
+                conforto, cuidado e tranquilidade.
+              </p>
+
+              <p class="location-note">Endereço completo disponível no agendamento.</p>
+
+              <div class="location-actions" aria-label="Ações de localização">
+                <a
+                  class="button button-secondary"
+                  href="https://maps.google.com/?q=COLE_AQUI_O_ENDERECO"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Ver localização
+                </a>
+                <a
+                  class="button button-primary"
+                  href="https://maps.google.com/?q=COLE_AQUI_O_ENDERECO"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Traçar rota
+                </a>
+              </div>
+            </div>
+
+            <div class="map-card" aria-label="Mapa da localização do estúdio">
+              <!-- Troque o src abaixo pelo iframe real do Google Maps. -->
+              <iframe
+                class="map-frame"
+                src="https://www.google.com/maps/embed?pb=COLE_AQUI_O_LINK_DO_MAPA"
+                title="Mapa da localização da Madu Cílios"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="cta-title">
+        <div class="container final-cta-content reveal">
+          <p class="section-kicker">Atendimento e cursos</p>
+          <h2 id="cta-title">Pronta para realçar seu olhar?</h2>
+          <p>
+            Agende seu horário ou peça informações sobre os cursos e tenha uma experiência
+            pensada para você.
+          </p>
+          <a
+            class="button button-primary button-large"
+            href="https://wa.me/5599999999999"
+            target="_blank"
+            rel="noopener"
+            data-whatsapp
+          >
+            Falar com a Madu no WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="footer-brand" href="#inicio">Madu Cílios</a>
+          <p>Protótipo de landing page desenvolvido para apresentação visual.</p>
+        </div>
+        <div class="footer-links" aria-label="Links rápidos">
+          <a href="https://wa.me/5599999999999" target="_blank" rel="noopener" data-whatsapp>
+            WhatsApp
+          </a>
+          <a href="https://www.instagram.com/sstudio_madu/" target="_blank" rel="noopener">
+            @sstudio_madu
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/5599999999999"
+      target="_blank"
+      rel="noopener"
+      aria-label="Agendar pelo WhatsApp"
+      data-whatsapp
+    >
+      <span>WA</span>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
